@@ -1,0 +1,108 @@
+import java.util.*;
+class BST{
+    class Node{
+        Node left;
+        Node right;
+        int data;
+        
+        Node(int data){
+            this.left = null;
+            this.right = null;
+            this.data = data;
+        }
+    }
+    
+    Node root;
+    
+    BST(){
+        root = null;
+    }
+    
+    public void insert(int val){
+        if(this.root==null){
+            this.root = new Node(val);
+            return;
+        }
+        insertEle(root,val);
+    }
+    
+    public Node insertEle(Node node, int val){
+        if(node==null){
+            return new Node(val);
+        }
+        if(val<=node.data)
+            node.left = insertEle(node.left,val);
+        else
+            node.right = insertEle(node.right,val);
+        return node;
+    }
+    
+    public void delete(int val){
+        if(root==null){
+            System.out.println("Tree is Empty");
+        }
+        root = deleteEle(this.root,val);
+    }
+    
+    public Node deleteEle(Node node, int val){
+        if(node==null){
+		return node;
+	}
+        if(val<node.data)
+            node.left = deleteEle(node.left,val);
+        else if(val>node.data)
+            node.right = deleteEle(node.right,val);
+        else{
+    		if(node.left==null)
+			return node.right;
+		else if(node.right == null)
+			return node.left;
+            node.data = getMin(node.right);
+            node.right = deleteEle(node.right, node.data);
+        }
+        return node;
+    }
+    
+    private int getMin(Node node){
+        Node pointer = node;
+        int min = 0;
+        while(pointer!=null){
+            min = pointer.data;
+            pointer = pointer.left;
+        }
+        return min;
+    }
+    
+    public void inOrder(Node node){
+        if(node==null){
+            return;
+        }
+        
+        inOrder(node.left);
+        System.out.print(node.data+" ");
+        inOrder(node.right);
+    }
+}
+
+public class BinarySearchTree{
+    public static void main(String args[]){
+        BST bst = new BST();
+        
+        bst.insert(30);
+        bst.insert(10);
+        bst.insert(35);
+        bst.insert(8);
+        bst.insert(12);
+        bst.insert(32);
+        bst.insert(85);
+        bst.insert(34);
+        
+        bst.inOrder(bst.root);
+        System.out.println();
+        
+        //bst.delete(85);
+        bst.delete(35);
+        bst.inOrder(bst.root);
+        
+    }
+}
