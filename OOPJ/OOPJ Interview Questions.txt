@@ -1,0 +1,79 @@
+1)Explain the components of the JDK.
+
+2)Differentiate between JDK, JVM, and JRE.
+
+3)What is the role of the JVM in Java? & How does the JVM execute Java code?
+
+4)Explain the memory management system of the JVM.
+
+5)What are the JIT compiler and its role in the JVM? What is the bytecode and why is it important for Java?
+
+6)Describe the architecture of the JVM.
+
+7)How does Java achieve platform independence through the JVM?
+
+8)What is the significance of the class loader in Java? What is the process of garbage collection in Java.?
+
+9)What are the four access modifiers in Java, and how do they differ from each other?
+
+10) What is the difference between public, protected, and default access modifiers?
+
+11) Can you override a method with a different access modifier in a subclass? For example, can a        protected method in a superclass be overridden with a private method in a subclass? Explain.
+
+12) What is the difference between protected and default (package-private) access?
+
+13) Is it possible to make a class private in Java? If yes, where can it be done, and what are the limitations?
+
+14) Can a top-level class in Java be declared as protected or private? Why or why not?
+
+15) What happens if you declare a variable or method as private in a class and try to access it from another class within the same package?
+
+16) Explain the concept of "package-private" or "default" access. How does it affect the visibility of class members?
+
+What does the static keyword mean in Java? Explain the difference between static and non-static methods.
+
+17) What is  the role of the static keyword in the context of memory management.
+
+18) Can static methods be overloaded and overridden in Java? How static variables shared across multiple instances of a class?
+
+19) What is the significance of the final keyword in Java?
+
+20) What are narrowing and widening conversions in Java?
+
+21) Provide examples of narrowing and widening conversions between primitive data types.
+
+22) How does Java handle potential loss of precision during narrowing conversions?
+
+23) Explain the concept of automatic widening conversion in Java.
+
+24) What are the implications of narrowing and widening conversions on type compatibility and data loss?
+25) What is inheritance in Java, and why is it useful ? What are the access specifiers that allow inheritance in Java?
+26) Can a class be inherited by multiple classes in Java? If not, how can you achieve multiple inheritance?
+27) What is the difference between single, multilevel, and hierarchical inheritance?
+28) Can a constructor be inherited in Java? Why or why not?
+29) What is the difference between String, StringBuilder, and StringBuffer in Java?
+30) Why are strings immutable in Java?
+31) How does the intern() method work with strings?
+32) What is the difference between == and .equals() when comparing strings in Java?
+33) Can you explain the difference between a literal string and a new string object?
+34) What is widening typecasting, and when is it done automatically in Java?
+35) What is narrowing typecasting, and why does it require explicit casting?
+36) What happens when you try to cast incompatible data types in Java?
+37) Is it possible to convert a double to a byte using narrowing casting? If yes, how does Java handle it?
+38) What is the difference between compile-time and runtime polymorphism in Java?
+39) Can you explain the significance of the instanceof operator with respect to polymorphism?
+40) What is abstraction in Java, and how is it implemented?
+41) What is the difference between an abstract class and an interface in Java?
+42) Can you declare an abstract class without any abstract methods? Why would you do that?
+43) Why can’t an abstract class be instantiated in Java?
+44) How does abstraction improve software design in OOP?
+45) What happens if a class implements an interface but does not provide an implementation for all of its methods?
+46) What is exception handling in Java, and why is it important?
+47) What is the difference between checked and unchecked exceptions in Java?
+48) What is the try-catch-finally block in Java, and how does it work?
+49) What is the purpose of the finally block? Can a finally block be skipped?
+50) Can you throw an exception manually in Java? If so, how?
+51) What is the difference between throw and throws in Java?
+52) What happens when an exception is thrown but not caught in Java?
+53) Can you have multiple catch blocks for a single try block? How does Java decide which one to execute?
+54) What is the purpose of the Throwable class in Java?
