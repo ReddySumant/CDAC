@@ -1,0 +1,30 @@
+1. What do you mean by Data Structures?
+2. Explain self-referential structure? Explain its need?
+3. List out the areas in which data structures are applied extensively?
+4. Explain the data structures used to perform recursion?
+5. List different types of data structures.
+6. What is the difference between iterative method and recursive method ? which one is feasible
+7. What are the types of Recursion
+8. How to reverse String in Java using Recursion.
+9. What is a stack data structure? What are the applications of stack?
+10. What are different operations available in stack data structure?
+11. Explain tower of hanoi?
+12. Which data structure is ideal to perform Recursion operation and why?
+13. Briefly write in brief the approaches to develop algorithms.
+14. What is backtracking?
+15. What is the difference between backtracking and recursion ?
+16. Explain what us Explicit and Implicit Backtracking Constrains?
+17. What is greedy algorithms ?
+18. What are some examples of greedy algorithms?
+19. What is the difference between greedy and brute force
+20. Explain stack? Which are the applications of stack?
+21. Convert a infix expression into postfix and then evaluate it. (Write code)
+22. Explain queue? Which are the types of queue?
+23. Explain the queue full condition for circular queue?
+24. Write in brief the method to implement two stacks using single array?
+25. How can we implement stack and queue using linked list?
+26. Which are the shortcomings of array over linked list?
+27. Explain linked list?
+28. How to write a program to reverse linked list?
+29. How can we reverse linked list using single pointer? Write a program.
+30. If you are using C language to implement the heterogeneous linked list, what pointer type will you use?
