@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        body{
+            background-color: #313131;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Enter Expense</h3>
+    <form action="">
+        <input type="date" placeholder="Enter date" id="date"> <br><br>
+        <input type="text" placeholder="Description" id="desc"> <br><br>
+        <input type="amount" placeholder="Enter amount" id="amount"> <br><br>
+        <button type="button" id="adddata">Add</button>
+    </form>
+    <p id="status" style="color: maroon;"></p>
+    <br>
+
+    <h3>Get Expenses Data</h3>
+    <form action="">
+        <input type="text" placeholder="Minimum Amount" id="minamount"><br><br>
+        <button type="button" id="submit">Get Data</button>
+    </form>
+    <br>
+
+    <h3>Expenses</h3>
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>date</th>
+                <th>amount</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="expense-table">
+
+        </tbody>
+    </table>
+
+    <h3 id="total-expense"></h3>
+    <script src="script.js"></script>
+</body>
+</html>

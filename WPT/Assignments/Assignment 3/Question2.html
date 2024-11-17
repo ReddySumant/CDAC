@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" placeholder="First Name" id="firstname">
+        <input type="text" placeholder="Last Name" id="lastname">
+        <input type="number" placeholder="Contact No" id="phone">
+        <input type="email" placeholder="sami@gmail.com" id="email">
+        <button type="submit" id="btn">Submit</button>
+    </form>
+
+    <script>
+        let fname = document.getElementById("firstname");
+        let lname = document.getElementById("lastname");
+        let number = document.getElementById("phone");
+        let email = document.getElementById("email");
+        let btn = document.getElementById("btn");
+
+        btn.onclick = ()=>{
+            let firstname = document.createElement("p");
+            firstname.innerText = fname.value;
+
+            let lastname = document.createElement("p");
+            lastname.innerText = lname.value; 
+
+            let phonenumber = document.createElement("p");
+            phonenumber.innerText = number.value;     
+
+            let emailid = document.createElement("p");
+            emailid.innerText = email.value;
+
+            document.body.appendChild(firstname);
+            document.body.appendChild(lastname);
+            document.body.appendChild(phonenumber);
+            document.body.appendChild(emailid);
+        }
+    </script>
+
+</body>
+</html>

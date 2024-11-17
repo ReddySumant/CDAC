@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #3C3D37;
+}
+
+#icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: grab;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    /* border: 0.1px solid black; */
+    gap: 3rem;
+    background-color: #1E201E;
+    /* box-shadow: 0px 0.5rem #fcffed; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#head{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#options{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    /* left: max(300, 930px); */
+    /* left: max(200, 500) */
+    /* margin-left: 2rem; */
+}
+
+.nav-links{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    padding: 1rem;
+    /* border-radius: 1.2rem; */
+}
+
+#images-slide{
+}
+
+#grocery-image{
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    top: max(4.5rem,30%);
+    width: 94%;
+    left: 3%;
+    right: 3%;
+    height: 120%;
+    background-color: transparent;
+    border: 2px solid black;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+.card{
+    width: max(320px,32%);
+    height: 406px;
+    background-color: #1E201E;
+    /* border: 2px solid black; */
+    margin-bottom: 2%;
+    color: white;
+}
+.card-head{
+    margin: 3%;
+    font-size: 2rem;
+}
+
+.card-img{
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+.card-link{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: end;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-weight: 550;
+    color: #007185;
+}
+
+#footer{
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    bottom: 0px;
+    top: max(1000px,154%);
+    width: 98%;
+    height: 15vh;
+    background-color: #1E201E;
+    color: white;
+}
+
+

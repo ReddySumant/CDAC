@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select name="" id="drop-down">
+        <option value="" class="options">option1</option>
+        <option value="" class="options">option2</option>
+        <option value="" class="options">option3</option>
+        <option value="" class="options">option4</option>
+    </select>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+        let options = document.getElementsByClassName("options");
+        let btn = document.getElementById("btn");
+
+        count = options.length-1;
+
+        btn.onclick = ()=>{
+            if(count>=0){
+                options[count].remove();
+                count--;
+            }
+        }
+
+    </script>
+
+</body>
+</html>
